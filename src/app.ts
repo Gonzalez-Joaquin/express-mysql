@@ -5,9 +5,7 @@ class App {
     private App: Application
 
     constructor(private PORT?: number | string) {
-        // Inicializo el app mediante express ( Es lo mismo que  const app = express() )
         this.App = express()
-        // Seteo el puerto que puede o no puede ser pasado en mi llamado de la intancia app en index.ts
         this.Settings()
         this.MiddleWares()
     }
