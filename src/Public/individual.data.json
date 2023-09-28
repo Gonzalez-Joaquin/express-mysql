@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Jon Doe",
+        "credential": 45849199,
+        "birthDate": "2004-08-10",
+        "schoolFinished": false,
+        "asJob": true
+    },
+    {
+        "id": 2,
+        "name": "Axel Rodriguez",
+        "credential": 40894556,
+        "birthDate": "2001-01-20",
+        "schoolFinished": true,
+        "asJob": false
+    },
+    {
+        "id": 3,
+        "name": "Felipe Sanchez",
+        "credential": 49008143,
+        "birthDate": "2007-05-10",
+        "schoolFinished": false,
+        "asJob": false
+    }
+]
