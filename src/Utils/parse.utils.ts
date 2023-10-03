@@ -40,14 +40,14 @@ const email = (emailFromRequest: any): string => {
 
 const date = (dateFromRequest: any, value: string): string => {
     if (!type.isString(dateFromRequest)) {
-        throw new Error(`Incorrect or missing ${value}`)
+        throw new Error('Incorrect or missing ' + value)
     }
     return dateFromRequest
 }
 
 const trueOrFalse = (trueOrFalseFromRequest: any, value: string): boolean => {
     if (!type.isBoolean(trueOrFalseFromRequest)) {
-        throw new Error(`Incorrect or missing ${value}`)
+        throw new Error('Incorrect or missing' + value)
     }
     return trueOrFalseFromRequest
 }

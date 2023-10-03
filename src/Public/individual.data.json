@@ -22,5 +22,13 @@
         "birthDate": "2007-05-10",
         "schoolFinished": false,
         "asJob": false
+    },
+    {
+        "id": 4,
+        "name": "Ciro 'El Licha' Feijo",
+        "credential": 45556889,
+        "birthDate": "2000-01-01",
+        "schoolFinished": false,
+        "asJob": false
     }
 ]

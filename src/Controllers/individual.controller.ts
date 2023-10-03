@@ -4,7 +4,7 @@ import validate from '../Utils/individual.utils'
 import service from '../Services/individual.service'
 
 export const getEntries = (_req: Request, res: Response): Response => {
-    return res.send(service.getEntriesWithoutSensitiveInfo)
+    return res.send(service.getEntries())
 }
 
 export const addEntry = (req: Request, res: Response): Response => {
