@@ -1,5 +1,6 @@
 import express from 'express'
 import morgan from 'morgan'
+import cors from 'cors'
 
 import userRouter from './Routes/user.routes'
 import indexRouter from './Routes/index.routes'
@@ -15,11 +16,12 @@ class App {
         this.Routes()
     }
 
-    Settings() { this.App.set('port', this.PORT || process.env.PORT || 7777) }
+    Settings() { this.App.set('port', this.PORT || process.env.PORT || 5000) }
 
     MiddleWares() {
         this.App.use(morgan('dev'))
         this.App.use(express.json())
+        this.App.use(cors())
     }
 
     Routes() {

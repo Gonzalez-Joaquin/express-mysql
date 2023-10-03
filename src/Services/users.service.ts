@@ -1,4 +1,4 @@
-import { NewUserEntry, NonSensitiveInfoUser, userEntry, UpdateUserEntry } from '../Interfaces/user.interface'
+import { NewUserEntry, NonSensitiveInfoUser, userEntry, UpdateUserEntry, LoginEntryData } from '../Interfaces/user.interface'
 
 import usersData from '../Public/user.data.json'
 
@@ -49,4 +49,19 @@ const updateUser = (updatedUser: UpdateUserEntry, id: number): Array<userEntry> 
     return allUsers
 }
 
-export default { getEntries, getEntriesWithoutSensitiveInfo, findById, addUser, updateUser, deleteUser }
+const loginUser = (loginData: LoginEntryData): userEntry => {
+    const user = allUsers.find(user => user.email === loginData.email)
+
+    if (user !== undefined) {
+
+        if (user.password === loginData.password) {
+            return user
+        }
+
+        throw new Error('Invalid or missing email or password.')
+    } else {
+        throw new Error('Invalid or missing email or password.')
+    }
+}
+
+export default { getEntries, getEntriesWithoutSensitiveInfo, findById, addUser, updateUser, deleteUser, loginUser }

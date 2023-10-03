@@ -1,4 +1,4 @@
-import { NewUserEntry, UpdateUserEntry } from '../Interfaces/user.interface'
+import { NewUserEntry, UpdateUserEntry, LoginEntryData } from '../Interfaces/user.interface'
 
 import parse from './parse.utils'
 
@@ -24,4 +24,12 @@ const toUpdatedUserEntry = (object: any): UpdateUserEntry => {
     return updateEntry
 }
 
-export default { toNewUserEntry, toUpdatedUserEntry }
+const updateLoginUserData = (object: any): LoginEntryData => {
+    const updateLoginEntryData: LoginEntryData = {
+        email: parse.email(object.email),
+        password: parse.password(object.password)
+    }
+    return updateLoginEntryData
+}
+
+export default { toNewUserEntry, toUpdatedUserEntry, updateLoginUserData }

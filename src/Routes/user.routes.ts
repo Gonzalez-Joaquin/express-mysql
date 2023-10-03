@@ -12,4 +12,7 @@ userRouter.route('/:id')
     .delete(userController.deleteUser)
     .put(userController.updateUser)
 
+userRouter.route('/login')
+    .post(userController.loginByUsername)
+
 export default userRouter

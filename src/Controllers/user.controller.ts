@@ -52,3 +52,18 @@ export const updateUser = (req: Request, res: Response): Response | void => {
         res.status(400).send(Error.message)
     }
 }
+
+// Control de inicio de sesión
+
+export const loginByUsername = (req: Request, res: Response): Response | void => {
+    try {
+        const loginUserData = validate.updateLoginUserData(req.body)
+
+        const updatedUserData = userServices.loginUser(loginUserData)
+
+        res.json(updatedUserData)
+    }
+    catch (Error: any) {
+        res.status(400).send(Error.message)
+    }
+}
