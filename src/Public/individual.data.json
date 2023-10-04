@@ -30,5 +30,37 @@
         "birthDate": "2000-01-01",
         "schoolFinished": false,
         "asJob": false
+    },
+    {
+        "id": 5,
+        "name": "Nahun Carrizo",
+        "credential": 45586652,
+        "birthDate": "2004-12-26",
+        "schoolFinished": true,
+        "asJob": false
+    },
+    {
+        "id": 6,
+        "name": "Dylan Velazquez",
+        "credential": 45123556,
+        "birthDate": "2004-10-22",
+        "schoolFinished": false,
+        "asJob": true
+    },
+    {
+        "id": 7,
+        "name": "Esteban Daniel Caballero",
+        "credential": 45223669,
+        "birthDate": "2004-09-25",
+        "schoolFinished": true,
+        "asJob": true
+    },
+    {
+        "id": 8,
+        "name": "Lautaro Castro",
+        "credential": 41256889,
+        "birthDate": "2000-05-15",
+        "schoolFinished": false,
+        "asJob": false
     }
 ]
