@@ -62,5 +62,29 @@
         "birthDate": "2000-05-15",
         "schoolFinished": false,
         "asJob": false
+    },
+    {
+        "id": 9,
+        "name": "Geronimo 'La banda del momo' Benavides",
+        "credential": 42002336,
+        "birthDate": "1996-06-06",
+        "schoolFinished": false,
+        "asJob": false
+    },
+    {
+        "id": 10,
+        "name": "Joaquin 'La esquina' Lopez",
+        "credential": 43556484,
+        "birthDate": "1997-07-17",
+        "schoolFinished": false,
+        "asJob": false
+    },
+    {
+        "id": 11,
+        "name": "Galo 'Pimpeano' Blasco Gutiérrez",
+        "credential": 40156889,
+        "birthDate": "2001-01-01",
+        "schoolFinished": false,
+        "asJob": false
     }
 ]

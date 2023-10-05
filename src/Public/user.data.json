@@ -14,37 +14,5 @@
         "permissions": "user",
         "email": "nahun@gmail.com",
         "password": "nahun123"
-    },
-    {
-        "id": 3,
-        "name": "Ciro Feijoo",
-        "credentials": 45130552,
-        "permissions": "user",
-        "email": "cirofeijoo@gmail.com",
-        "password": "ciro123"
-    },
-    {
-        "id": 4,
-        "name": "Dylan Velazquez",
-        "credentials": 45889911,
-        "permissions": "user",
-        "email": "dylan@gmail.com",
-        "password": "dylan123"
-    },
-    {
-        "id": 5,
-        "name": "Nicolas Luna",
-        "credentials": 44158976,
-        "permissions": "user",
-        "email": "lunanicolas@gmail.com",
-        "password": "nicolas123"
-    },
-    {
-        "id": 6,
-        "name": "Esteban Daniel Caballero",
-        "credentials": 46558187,
-        "permissions": "user",
-        "email": "estexsold@gmail.com",
-        "password": "esteban123"
     }
 ]
