@@ -4,30 +4,30 @@ import parse from './parse.utils'
 
 const toNewUserEntry = (object: any): NewUserEntry => {
     const newEntry: NewUserEntry = {
-        name: parse.name(object.name),
+        name: parse.string(object.name, 'name'),
         permissions: parse.permissions(object.permissions),
-        password: parse.password(object.password),
-        credentials: parse.credentials(object.credentials),
-        email: parse.email(object.email)
+        password: parse.string(object.password, 'password'),
+        credentials: parse.number(object.credentials, 'credentials'),
+        email: parse.string(object.email, 'email')
     }
     return newEntry
 }
 
 const toUpdatedUserEntry = (object: any): UpdateUserEntry => {
     const updateEntry: UpdateUserEntry = {
-        name: parse.name(object.name),
-        credentials: parse.credentials(object.credentials),
+        name: parse.string(object.name, 'name'),
+        credentials: parse.number(object.credentials, 'credentials'),
         permissions: parse.permissions(object.permissions),
-        email: parse.email(object.email),
-        password: parse.password(object.password)
+        email: parse.string(object.email, 'email'),
+        password: parse.string(object.password, 'email')
     }
     return updateEntry
 }
 
 const updateLoginUserData = (object: any): LoginEntryData => {
     const updateLoginEntryData: LoginEntryData = {
-        email: parse.email(object.email),
-        password: parse.password(object.password)
+        email: parse.string(object.email, 'email'),
+        password: parse.string(object.password, 'password')
     }
     return updateLoginEntryData
 }

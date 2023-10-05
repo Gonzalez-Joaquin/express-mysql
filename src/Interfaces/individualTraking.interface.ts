@@ -6,10 +6,10 @@ export default interface trakingIndividualsEntry {
     idUser: number[] | number,
 }
 
-export type NonSensitiveInfoCourse = Pick<trakingIndividualsEntry, 'id' | 'idUser'>
+export type NonSensitiveInfoIndivudalTraking = Pick<trakingIndividualsEntry, 'id' | 'idUser'>
 
 export type NewEntry = Omit<trakingIndividualsEntry, 'id'>
 
-export type UpdateEntryUser = Pick<trakingIndividualsEntry, 'id' | 'idUser'>
-export type UpdateEntryTraking = Pick<trakingIndividualsEntry, 'id' | 'idTrakings'>
-export type UpdateEntryCourse = Pick<trakingIndividualsEntry, 'id' | 'idCourses'>
+export type UpdateEntryUser = Pick<trakingIndividualsEntry, 'idUser'>
+export type UpdateEntryTraking = Pick<trakingIndividualsEntry, 'idTrakings'>
+export type UpdateEntryCourse = Pick<trakingIndividualsEntry, 'idCourses'>

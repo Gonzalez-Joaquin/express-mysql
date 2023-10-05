@@ -2,18 +2,11 @@ import { Permissions } from "../Interfaces/user.interface"
 
 import type from './types.utils'
 
-const name = (nameFromRequest: any): string => {
+const string = (nameFromRequest: any, value: string): string => {
     if (!type.isString(nameFromRequest)) {
-        throw new Error('Incorrect or missing Name')
+        throw new Error('Incorrect or missing' + value)
     }
     return nameFromRequest
-}
-
-const password = (passwordFromRequest: any): string => {
-    if (!type.isString(passwordFromRequest)) {
-        throw new Error('Incorrect or missing Password')
-    }
-    return passwordFromRequest
 }
 
 const permissions = (permissionsFromRequest: any): Permissions => {
@@ -23,26 +16,12 @@ const permissions = (permissionsFromRequest: any): Permissions => {
     return permissionsFromRequest
 }
 
-const credentials = (credentialFromRequest: any): number => {
+const number = (credentialFromRequest: any, value: string): number => {
     if (!type.isNumber(credentialFromRequest)) {
-        throw new Error('Incorrect or missing Credentials')
+        throw new Error('Incorrect or missing' + value)
     }
 
     return credentialFromRequest
-}
-
-const email = (emailFromRequest: any): string => {
-    if (!type.isString) {
-        throw new Error('Incorrect or missing Email')
-    }
-    return emailFromRequest
-}
-
-const date = (dateFromRequest: any, value: string): string => {
-    if (!type.isString(dateFromRequest)) {
-        throw new Error('Incorrect or missing ' + value)
-    }
-    return dateFromRequest
 }
 
 const trueOrFalse = (trueOrFalseFromRequest: any, value: string): boolean => {
@@ -52,4 +31,20 @@ const trueOrFalse = (trueOrFalseFromRequest: any, value: string): boolean => {
     return trueOrFalseFromRequest
 }
 
-export default { name, password, permissions, credentials, email, date, trueOrFalse }
+const numberOrArrayOfNumber = (paramsFromRequest: any, value: string): number | number[] => {
+    if (!type.isNumber(paramsFromRequest) || !type.isArray(paramsFromRequest)) {
+        throw new Error('Incorrect or missing' + value)
+    }
+
+    return paramsFromRequest
+}
+
+const numberOrArrayOfNumberOrNull = (paramsFromRequest: any, value: string): number | number[] | null => {
+    if (!type.isNumber(paramsFromRequest) || !type.isArray(paramsFromRequest)) {
+        throw new Error('Incorrect or missing' + value)
+    }
+
+    return paramsFromRequest
+}
+
+export default { string, permissions, trueOrFalse, number, numberOrArrayOfNumber, numberOrArrayOfNumberOrNull }

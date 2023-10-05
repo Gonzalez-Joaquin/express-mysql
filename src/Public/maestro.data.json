@@ -1,0 +1,530 @@
+{
+    "User": [
+        {
+            "id": 1,
+            "name": "Joaquin Gonzalez",
+            "credentials": 46103559,
+            "permissions": "admin",
+            "email": "joa.contacto.gz@gmail.com",
+            "password": "joaquin123"
+        },
+        {
+            "id": 2,
+            "name": "Nahun Carrizo",
+            "credentials": 45919488,
+            "permissions": "user",
+            "email": "nahun@gmail.com",
+            "password": "nahun123"
+        }
+    ],
+    "individualsTrakings": [
+        {
+            "id": 1,
+            "idIndividual": 1,
+            "idTrakings": 1,
+            "idCourses": 1,
+            "idUser": 2
+        },
+        {
+            "id": 2,
+            "idIndividual": 2,
+            "idTrakings": 2,
+            "idCourses": 3,
+            "idUser": 2
+        },
+        {
+            "id": 3,
+            "idIndividual": 3,
+            "idTrakings": 3,
+            "idCourses": 4,
+            "idUser": 1
+        },
+        {
+            "id": 4,
+            "idIndividual": 4,
+            "idTrakings": [
+                4,
+                8,
+                10
+            ],
+            "idCourses": null,
+            "idUser": 2
+        },
+        {
+            "id": 5,
+            "idIndividual": 5,
+            "idTrakings": [
+                5,
+                7
+            ],
+            "idCourses": 5,
+            "idUser": 1
+        },
+        {
+            "id": 6,
+            "idIndividual": 6,
+            "idTrakings": [
+                6,
+                9,
+                11
+            ],
+            "idCourses": null,
+            "idUser": 2
+        },
+        {
+            "id": 7,
+            "idIndividual": 7,
+            "idTrakings": [
+                12,
+                13,
+                14,
+                18,
+                19
+            ],
+            "idCourses": null,
+            "idUser": 1
+        },
+        {
+            "id": 8,
+            "idIndividual": 8,
+            "idTrakings": 15,
+            "idCourses": 2,
+            "idUser": 2
+        },
+        {
+            "id": 9,
+            "idIndividual": 9,
+            "idTrakings": [
+                13,
+                16,
+                17,
+                20,
+                21
+            ],
+            "idCourses": null,
+            "idUser": 2
+        },
+        {
+            "id": 10,
+            "idIndividual": 10,
+            "idTrakings": [
+                22,
+                23,
+                28,
+                29,
+                30
+            ],
+            "idCourses": null,
+            "idUser": 1
+        },
+        {
+            "id": 11,
+            "idIndividual": 11,
+            "idTrakings": [
+                24,
+                25,
+                26,
+                27,
+                31,
+                32
+            ],
+            "idCourses": null,
+            "idUser": 1
+        }
+    ],
+    "indivudals": [
+        {
+            "id": 1,
+            "name": "Jon Doe",
+            "credential": 45849199,
+            "birthDate": "2004-08-10",
+            "schoolFinished": false,
+            "asJob": true
+        },
+        {
+            "id": 2,
+            "name": "Axel Rodriguez",
+            "credential": 40894556,
+            "birthDate": "2001-01-20",
+            "schoolFinished": true,
+            "asJob": false
+        },
+        {
+            "id": 3,
+            "name": "Felipe Sanchez",
+            "credential": 49008143,
+            "birthDate": "2007-05-10",
+            "schoolFinished": false,
+            "asJob": false
+        },
+        {
+            "id": 4,
+            "name": "Ciro 'El Licha' Feijo",
+            "credential": 45556889,
+            "birthDate": "2000-01-01",
+            "schoolFinished": false,
+            "asJob": false
+        },
+        {
+            "id": 5,
+            "name": "Nahun Carrizo",
+            "credential": 45586652,
+            "birthDate": "2004-12-26",
+            "schoolFinished": true,
+            "asJob": false
+        },
+        {
+            "id": 6,
+            "name": "Dylan Velazquez",
+            "credential": 45123556,
+            "birthDate": "2004-10-22",
+            "schoolFinished": false,
+            "asJob": true
+        },
+        {
+            "id": 7,
+            "name": "Esteban Daniel Caballero",
+            "credential": 45223669,
+            "birthDate": "2004-09-25",
+            "schoolFinished": true,
+            "asJob": true
+        },
+        {
+            "id": 8,
+            "name": "Lautaro Castro",
+            "credential": 41256889,
+            "birthDate": "2000-05-15",
+            "schoolFinished": false,
+            "asJob": false
+        },
+        {
+            "id": 9,
+            "name": "Geronimo 'La banda del momo' Benavides",
+            "credential": 42002336,
+            "birthDate": "1996-06-06",
+            "schoolFinished": false,
+            "asJob": false
+        },
+        {
+            "id": 10,
+            "name": "Joaquin 'La esquina' Lopez",
+            "credential": 43556484,
+            "birthDate": "1997-07-17",
+            "schoolFinished": false,
+            "asJob": false
+        },
+        {
+            "id": 11,
+            "name": "Galo 'Pimpeano' Blasco Gutiérrez",
+            "credential": 40156889,
+            "birthDate": "2001-01-01",
+            "schoolFinished": false,
+            "asJob": false
+        }
+    ],
+    "trakings": [
+        {
+            "id": 1,
+            "idIndividual": 1,
+            "title": "Robar un auto",
+            "desc": "Forzo la cerradura y lo choco",
+            "criminalCase": "1",
+            "date": "2020-12-22"
+        },
+        {
+            "id": 2,
+            "idIndividual": 2,
+            "title": "Pelea callejera",
+            "desc": "Se peleo fuera de la escuela",
+            "criminalCase": "2",
+            "date": "2021-6-22"
+        },
+        {
+            "id": 3,
+            "idIndividual": 3,
+            "title": "Robo a mano armada",
+            "desc": "Robo a una licoreria",
+            "criminalCase": "3",
+            "date": "2022-01-18"
+        },
+        {
+            "id": 4,
+            "idIndividual": 4,
+            "title": "Uso de arma",
+            "desc": "Tirarle gas pimienta a un homeless",
+            "criminalCase": "4",
+            "date": "2023-05-23"
+        },
+        {
+            "id": 5,
+            "idIndividual": 5,
+            "title": "Robo de datos confidenciales",
+            "desc": "Hackeo masivo a la plataforma Tecito",
+            "criminalCase": "5",
+            "date": "2023-07--16"
+        },
+        {
+            "id": 6,
+            "idIndividual": 6,
+            "title": "Secuestro a mano armada",
+            "desc": "Entrar a propiedad privada y secuestrar a la hija del gobernado, vestido de Obama",
+            "criminalCase": "6",
+            "date": "2023-10-31"
+        },
+        {
+            "id": 7,
+            "idIndividual": 5,
+            "title": "Asalto cibernetico a la nasa",
+            "desc": "Intento acceder a la nasa mediante una computadora de gobierno suministrada por el consejo escolar",
+            "criminalCase": "7",
+            "date": "2023-08-18"
+        },
+        {
+            "id": 8,
+            "idIndividual": 4,
+            "title": "Secuestro y robo a mano armada",
+            "desc": "Busco al homeless lo secuestro y le robo su carton de cama",
+            "criminalCase": "8",
+            "date": "2023-08-23"
+        },
+        {
+            "id": 9,
+            "idIndividual": 6,
+            "title": "Intento de Robo, extorción, secuestro y toma de reenes",
+            "desc": "Intento entrar al banco central y llevarse todos los USD del gobierno",
+            "criminalCase": "9",
+            "date": "2023-11-05"
+        },
+        {
+            "id": 10,
+            "idIndividual": 4,
+            "title": "Intento de homicidio",
+            "desc": "Ataque a homeless e incendio su cama con gasolina",
+            "criminalCase": "10",
+            "date": "2023-09-05"
+        },
+        {
+            "id": 11,
+            "idIndividual": 6,
+            "title": "Robo e intento de homicidio",
+            "desc": "Robo, y lesión a una mujer",
+            "criminalCase": "11",
+            "date": "2023-12-15"
+        },
+        {
+            "id": 12,
+            "idIndividual": 7,
+            "title": "Estafa",
+            "desc": "Estafa en partido de black jack",
+            "criminalCase": "12",
+            "date": "2020-05-16"
+        },
+        {
+            "id": 13,
+            "idIndividual": 7,
+            "title": "Extorción y secuestro",
+            "desc": "Intento de robo mediante secuestro al hijo de un empresario",
+            "criminalCase": "13",
+            "date": "2020-06-18"
+        },
+        {
+            "id": 14,
+            "idIndividual": 7,
+            "title": "Estafa y extorsión",
+            "desc": "Amenazar con exponer datos privados de un empresario pidio $150.000",
+            "criminalCase": "14",
+            "date": "2021-05-20"
+        },
+        {
+            "id": 15,
+            "idIndividual": 8,
+            "title": "Pertenencia de sustancias",
+            "desc": "Codeina, clonacepan, y crack",
+            "criminalCase": "15",
+            "date": "2022-11-15"
+        },
+        {
+            "id": 16,
+            "idIndividual": 9,
+            "title": "Venta de pasaporte ilegal",
+            "desc": "Investigación por venta de 15 pasaportes ilegales",
+            "criminalCase": "16",
+            "date": "2020-12-24"
+        },
+        {
+            "id": 17,
+            "idIndividual": 9,
+            "title": "Pelea callejera",
+            "desc": "Pelea porque alguien le dijo 'solta la bandera italiano puto' le deformo la nariz",
+            "criminalCase": "17",
+            "date": "2021-10-20"
+        },
+        {
+            "id": 18,
+            "idIndividual": 7,
+            "title": "Manipulación y Robo",
+            "desc": "Robo y manipulación  a una abuela por sus joyas, sigue profugo",
+            "criminalCase": "18",
+            "date": "2022-01-20"
+        },
+        {
+            "id": 19,
+            "idIndividual": 7,
+            "title": "Secuestro",
+            "desc": "Atrapado en huida luego de cobrar un pago por un nene de 10 años",
+            "criminalCase": "19",
+            "date": "2023-08-27"
+        },
+        {
+            "id": 20,
+            "idIndividual": 9,
+            "title": "Asalto a mano armada",
+            "desc": "En la huida gripo 'Robado por bobi', sigue profugo",
+            "criminalCase": "20",
+            "date": "2022-04-12"
+        },
+        {
+            "id": 21,
+            "idIndividual": 9,
+            "title": "Pelea",
+            "desc": "Atrapado en pelea callejera en un bar, razones aún desconocidas",
+            "criminalCase": "21",
+            "date": "2022-10-20"
+        },
+        {
+            "id": 22,
+            "idIndividual": 10,
+            "title": "Pelea",
+            "desc": "Pelea despues de partido en la bombonera",
+            "criminalCase": "22",
+            "date": "2022-05-13"
+        },
+        {
+            "id": 23,
+            "idIndividual": 10,
+            "title": "Pelea y uso de arma blanca",
+            "desc": "Le corto el brazo donde tenia una tatuaje de river en una pelea callejera",
+            "criminalCase": "23",
+            "date": "2023-06-20"
+        },
+        {
+            "id": 24,
+            "idIndividual": 11,
+            "title": "Robo de guante blanco",
+            "desc": "Robo de joyeria con inflitrados, dejo una tarjeta de 'La esquina',en busqueda y captura",
+            "criminalCase": "24",
+            "date": "2020-12-30"
+        },
+        {
+            "id": 25,
+            "idIndividual": 11,
+            "title": "Robo y secuestro, logro escapar",
+            "desc": "Se identifico como 'de la esquina insta', robo $500.000 USD y sigue profugo",
+            "criminalCase": "25",
+            "date": "2021-10-22"
+        },
+        {
+            "id": 26,
+            "idIndividual": 11,
+            "title": "Robo a guante blanco",
+            "desc": "Robo de diez autos de una concesionaria 'AUTOVIA', sigue en busqueda y captura",
+            "criminalCase": "26",
+            "date": "2022-10-31"
+        },
+        {
+            "id": 27,
+            "idIndividual": 11,
+            "title": "Robo, secuestro y lesiones",
+            "desc": "Secuestro y lesiones para el robo de $1.000.000 usd, logró escapar",
+            "criminalCase": "27",
+            "date": "2022-11-20"
+        },
+        {
+            "id": 28,
+            "idIndividual": 10,
+            "title": "Choque y fuga",
+            "desc": "Accidente con una AMAROK acesinando a dos mujeres, se encuentra profugo",
+            "criminalCase": "28",
+            "date": "2023-07-15"
+        },
+        {
+            "id": 29,
+            "idIndividual": 10,
+            "title": "Asesinato",
+            "desc": "Mato y se fugó, el implicado fue el lider de la barra brava de river, en busqueda y captura",
+            "criminalCase": "29",
+            "date": "2023-09-20"
+        },
+        {
+            "id": 30,
+            "idIndividual": 10,
+            "title": "Intento de homicidio",
+            "desc": "Intento de homicidio al dueño del monumental, atrapado en la fuga",
+            "criminalCase": "30",
+            "date": "2023-10-07"
+        },
+        {
+            "id": 31,
+            "idIndividual": 11,
+            "title": "Homicidio, robo, y fuga",
+            "desc": "Durante la fuga de un robo cometio homicidio de 15 polias que estaban en su busqueda",
+            "criminalCase": "31",
+            "date": "2023-11-07"
+        },
+        {
+            "id": 32,
+            "idIndividual": 11,
+            "title": "Robo, fuga y homicidio",
+            "desc": "En el robo a un banco mato al guardia de seguridad pero fue atrapado en la huida",
+            "criminalCase": "32",
+            "date": "2023-12-08"
+        }
+    ],
+    "courses": [
+        {
+            "id": 1,
+            "idIndividual": 1,
+            "name": "Gasista",
+            "desc": "Instalaciones de gas con termofusión",
+            "complete": true,
+            "startDate": "2021-10-21",
+            "endDate": "2023-12-12"
+        },
+        {
+            "id": 2,
+            "idIndividual": 2,
+            "name": "Electricista",
+            "desc": "Instalación electrica, manipulación de ascensores",
+            "complete": true,
+            "startDate": "2021-03-20",
+            "endDate": "2023-12-18"
+        },
+        {
+            "id": 3,
+            "idIndividual": 2,
+            "name": "Ventas",
+            "desc": "Preparación para ventas de almacenes",
+            "complete": true,
+            "startDate": "2022-10-21",
+            "endDate": "2023-10-25"
+        },
+        {
+            "id": 4,
+            "idIndividual": 3,
+            "name": "Plomero",
+            "desc": "Instalaciones hasta 4 bocas",
+            "complete": true,
+            "startDate": "2021-06-10",
+            "endDate": "2023-12-10"
+        },
+        {
+            "id": 5,
+            "idIndividual": 5,
+            "name": "Data Entry",
+            "desc": "Ingresa datos en un portal web",
+            "complete": true,
+            "startDate": "2022-03-12",
+            "endDate": "2023-06-23"
+        }
+    ]
+}

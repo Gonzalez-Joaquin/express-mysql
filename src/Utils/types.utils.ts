@@ -16,4 +16,8 @@ const isBoolean = (param: any): boolean => {
     return typeof param === 'boolean'
 }
 
-export default { isString, isPermissions, isNumber, isBoolean }
+const isArray = (param: any): boolean => {
+    return typeof param === 'object'
+}
+
+export default { isString, isPermissions, isNumber, isBoolean, isArray }

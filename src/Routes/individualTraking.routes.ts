@@ -1,16 +1,15 @@
 import { Router } from 'express'
-
 import controller from '../Controllers/individual.controller'
 
-const individualRouter = Router()
+const individualTrakingRouter = Router()
 
-individualRouter.route('/')
+individualTrakingRouter.route('/')
     .get(controller.getEntries)
     .post(controller.addEntry)
 
-individualRouter.route('/:id')
+individualTrakingRouter.route('/:id')
     .get(controller.getEntry)
     .delete(controller.deleteEntry)
-    .put(controller.addEntry)
+    .put(controller.updateEntry)
 
-export default individualRouter
+export default individualTrakingRouter

@@ -4,20 +4,20 @@ import parse from './parse.utils'
 
 const toNewEntry = (object: any): NewEntry => {
     const newEntry: NewEntry = {
-        name: parse.name(object.name),
-        credential: parse.credentials(object.credential),
-        birthDate: parse.date(object.birthDate, 'Birth Date'),
-        schoolFinished: parse.trueOrFalse(object.schoolFinished, 'School Finished'),
-        asJob: parse.trueOrFalse(object.asJob, 'As Job')
+        name: parse.string(object.name, 'name'),
+        credential: parse.number(object.credential, 'credential'),
+        birthDate: parse.string(object.birthDate, 'birthDate'),
+        schoolFinished: parse.trueOrFalse(object.schoolFinished, 'schoolFinished'),
+        asJob: parse.trueOrFalse(object.asJob, 'asJob')
     }
     return newEntry
 }
 
 const toUpdateEntry = (object: any): UpdateEntry => {
     const updateEntry: UpdateEntry = {
-        name: parse.name(object.name),
-        schoolFinished: parse.trueOrFalse(object.schoolFinished, 'School Finished'),
-        asJob: parse.trueOrFalse(object.asJob, 'As Job')
+        name: parse.string(object.name, 'name'),
+        schoolFinished: parse.trueOrFalse(object.schoolFinished, 'schoolFinished'),
+        asJob: parse.trueOrFalse(object.asJob, 'asJob')
     }
     return updateEntry
 }

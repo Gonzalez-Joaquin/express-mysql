@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 
-import validate from '../Utils/individual.utils'
-import service from '../Services/individual.service'
+import validate from '../Utils/traking.utils'
+import service from '../Services/traking.service'
 
 const getEntries = (_req: Request, res: Response): Response => {
     return res.send(service.getEntries())

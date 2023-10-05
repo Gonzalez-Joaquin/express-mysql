@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 
-import validate from '../Utils/individual.utils'
-import service from '../Services/individual.service'
+import validate from '../Utils/course.utils'
+import service from '../Services/course.service'
 
 const getEntries = (_req: Request, res: Response): Response => {
     return res.send(service.getEntries())
@@ -28,14 +28,13 @@ const getEntry = (req: Request, res: Response): Response => {
 const deleteEntry = (req: Request, res: Response): Response => {
     const entry = service.deleteEntry(+req.params.id)
     return entry
-        ? res.send(`El Individuo con id '${JSON.stringify(entry.id)}' fue eliminado `)
+        ? res.send(`El course con id '${JSON.stringify(entry.id)}' fue eliminado `)
         : res.sendStatus(404)
 }
 
 const updateEntry = (req: Request, res: Response): Response | void => {
     try {
         const updateEntry = validate.toUpdateEntry(req.body)
-
         const updatedEntry = service.updateEntry(updateEntry, +req.params.id)
 
         res.json(updatedEntry)
