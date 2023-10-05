@@ -20,7 +20,7 @@ const addEntry = (newEntry: NewEntry): trakingEntry => {
     return updatedEntry
 }
 
-const findById = (id: number): trakingEntry | undefined => allData.find(entry => entry.id === id)
+const findById = (id: number): trakingEntry[] | undefined => allData.filter(entry => entry.idIndividual === id)
 
 const deleteEntry = (id: number): trakingEntry | undefined => {
     const entry = allData.find(entry => entry.id === id)

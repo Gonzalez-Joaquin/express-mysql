@@ -20,13 +20,8 @@ const addEntry = (newIndividualEntry: NewEntry): individualEntry => {
     return newEntry
 }
 
-const findById = (id: number): NonSensitiveInfoIndividual | undefined => {
-    const entry = allData.find(entry => entry.id === id)
-    if (entry !== undefined) {
-        const { asJob, birthDate, schoolFinished, ...restData } = entry
-        return restData
-    }
-    return entry
+const findById = (id: number): individualEntry | undefined => {
+    return allData.find(entry => entry.id === id)
 }
 
 const deleteEntry = (id: number): individualEntry | undefined => {

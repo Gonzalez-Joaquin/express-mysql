@@ -20,7 +20,9 @@ const addEntry = (newEntry: NewEntry): courseEntry => {
     return updatedEntry
 }
 
-const findById = (id: number): courseEntry | undefined => allData.find(entry => entry.id === id)
+const findById = (id: number): courseEntry[] | undefined => {
+    return allData.filter(entry => entry.idIndividual === id)
+}
 
 const deleteEntry = (id: number): courseEntry | undefined => {
     const entry = allData.find(entry => entry.id === id)
