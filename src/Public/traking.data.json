@@ -257,10 +257,74 @@
     },
     {
         "id": 33,
-        "idIndividual": 4,
-        "title": "Invasión a propiedad privada",
-        "desc": "En un acto de reveldia a sus 18 años y en contra de toda ley de lesa humanidad, el individuo intentó, con su grupo 'Los Lichas' invadir Abganistán.",
-        "date": "2023-10-04",
-        "criminalCase": "33"
+        "idIndividual": 12,
+        "title": "Agresión",
+        "desc": "A sus 12 años atrapado por agredir a personal de la comisaria 7ma despues de separar una pelea escolar",
+        "criminalCase": "33",
+        "date": "2017-06-10"
+    },
+    {
+        "id": 34,
+        "idIndividual": 12,
+        "title": "Pelea, agresión, lesiones personales, hurto",
+        "desc": "Luego de una disputa escolar se peleo, agredio, quebro y hurtó el telefóno de un compañero de clase",
+        "criminalCase": "34",
+        "date": "2018-04-07"
+    },
+    {
+        "id": 35,
+        "idIndividual": 12,
+        "title": "Posesión de arma, disputa, descontrol del orden publico",
+        "desc": "Cito sus palabras 'esos chorritos de cartón, bigotes de leche no nos van a afanar mas que corran', esto fue cuando lo intercepto la policia corriendo a 6 con una mini bandita que armo ",
+        "criminalCase": "35",
+        "date": "2019-07-06"
+    },
+    {
+        "id": 36,
+        "idIndividual": 12,
+        "title": "Agresión",
+        "desc": "Agredio vervalmente a un policia cuando lo quiso revisar",
+        "criminalCase": "36",
+        "date": "2019-10-31"
+    },
+    {
+        "id": 37,
+        "idIndividual": 12,
+        "title": "Portación de arma blanca, huida, lesiones",
+        "desc": "En un operativo de allanamiento a su domicilio, se le encontro multiples armas blancas entre ellas segun lo que cito el 'Una churrasca para tu señora', y otro tipo de cuchillos",
+        "criminalCase": "37",
+        "date": "2020-01-10"
+    },
+    {
+        "id": 38,
+        "idIndividual": 12,
+        "title": "Lesión y agresión",
+        "desc": "Luego de un accidente de transito lastimo a un taxista por atropellarle, le tiro 3 dientes",
+        "criminalCase": "38",
+        "date": "2020-3-25"
+    },
+    {
+        "id": 39,
+        "idIndividual": 12,
+        "title": "Robo a mano armada, romper el orden publico",
+        "desc": "Accedio a una casa, y robo 15 juegos de play 4, en la fuga le pego con las cajas a los policias",
+        "criminalCase": "39",
+        "date": "2021-09-10"
+    },
+    {
+        "id": 40,
+        "idIndividual": 12,
+        "title": "Desorden del orden publico",
+        "desc": "Luego de la salida de un boliche rompio dos locales y empezo a gritar en cuero en la calle",
+        "criminalCase": "40",
+        "date": "2022-11-15"
+    },
+    {
+        "id": 41,
+        "idIndividual": 12,
+        "title": "Robo, toma de reenes, extorción, desorden del orden publico, manipulación, homicidio, chantaje",
+        "desc": "Entradera a un banco donde estaba la hija del ministro de economia, generando chantaje por un millón de dolares, donde estuvo extorcionando a la gente de dentro durante 4 dias, tambien empezó a matar rehenes por cada hora hasta que se le entrego un helicoptero, se encuentra en busqueda y captura",
+        "criminalCase": "41",
+        "date": "2023-12-10"
     }
 ]

@@ -19,7 +19,7 @@
     },
     {
         "id": 3,
-        "idIndividual":2,
+        "idIndividual": 2,
         "name": "Ventas",
         "desc": "Preparación para ventas de almacenes",
         "complete": true,
@@ -27,7 +27,7 @@
         "endDate": "2023-10-25"
     },
     {
-        "id":4,
+        "id": 4,
         "idIndividual": 3,
         "name": "Plomero",
         "desc": "Instalaciones hasta 4 bocas",
@@ -43,5 +43,41 @@
         "complete": true,
         "startDate": "2022-03-12",
         "endDate": "2023-06-23"
+    },
+    {
+        "id": 6,
+        "idIndividual": 1,
+        "name": "Electricista",
+        "desc": "Instalaciones hasta 4 bocas, además de capacitación para ascensores",
+        "complete": true,
+        "startDate": "2020-05-16",
+        "endDate": "2023-12-20"
+    },
+    {
+        "id": 7,
+        "idIndividual": 1,
+        "name": "Plomero I",
+        "desc": "Intalación completa de casas hasta un baño",
+        "complete": true,
+        "startDate": "2021-03-10",
+        "endDate": "2022-04-12"
+    },
+    {
+        "id": 8,
+        "idIndividual": 1,
+        "name": "Plomero II",
+        "desc": "Implementación de bombas e instalación de bañera",
+        "complete": true,
+        "startDate": "2022-05-16",
+        "endDate": "2023-10-12"
+    },
+    {
+        "id": 9,
+        "idIndividual": 1,
+        "name": "Plomero III",
+        "desc": "Insalación hasta 5 pisos",
+        "complete": false,
+        "startDate": "2023-11-16",
+        "endDate": "En progreso"
     }
 ]
