@@ -254,5 +254,13 @@
         "desc": "En el robo a un banco mato al guardia de seguridad pero fue atrapado en la huida",
         "criminalCase": "32",
         "date": "2023-12-08"
+    },
+    {
+        "id": 33,
+        "idIndividual": 4,
+        "title": "Invasión a propiedad privada",
+        "desc": "En un acto de reveldia a sus 18 años y en contra de toda ley de lesa humanidad, el individuo intentó, con su grupo 'Los Lichas' invadir Abganistán.",
+        "date": "2023-10-04",
+        "criminalCase": "33"
     }
 ]
