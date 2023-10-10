@@ -12,4 +12,7 @@ courseRouter.route('/:id')
     .delete(controller.deleteEntry)
     .put(controller.updateEntry)
 
+courseRouter.route('/find/:id')
+    .get(controller.getEntryById)
+
 export default courseRouter

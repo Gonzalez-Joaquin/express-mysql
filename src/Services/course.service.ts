@@ -20,6 +20,10 @@ const addEntry = (newEntry: NewEntry): courseEntry => {
     return updatedEntry
 }
 
+const findOneById = (id: number): courseEntry | undefined => {
+    return allData.find(entry => entry.id === id)
+}
+
 const findById = (id: number): courseEntry[] | undefined => {
     return allData.filter(entry => entry.idIndividual === id)
 }
@@ -48,4 +52,4 @@ const updateEntry = (updateEntry: UpdateEntry, id: number): Array<courseEntry> =
     return allData
 }
 
-export default { getEntries, getEntriesWithoutSensitiveInfo, addEntry, findById, deleteEntry, updateEntry }
+export default { getEntries, getEntriesWithoutSensitiveInfo, addEntry, findById, findOneById, deleteEntry, updateEntry }

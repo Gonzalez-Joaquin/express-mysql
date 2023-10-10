@@ -12,4 +12,7 @@ trakingRouter.route('/:id')
     .delete(controller.deleteEntry)
     .put(controller.updateEntry)
 
+trakingRouter.route('/find/:id')
+    .get(controller.getOneEntryById)
+
 export default trakingRouter
