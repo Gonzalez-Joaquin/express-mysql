@@ -25,6 +25,13 @@ const getEntry = (req: Request, res: Response): Response => {
         : res.sendStatus(404)
 }
 
+const getOneEntryById = (req: Request, res: Response): Response => {
+    const entry = service.findOneById(+req.params.id)
+    return entry
+        ? res.send(entry)
+        : res.sendStatus(404)
+}
+
 const deleteEntry = (req: Request, res: Response): Response => {
     const entry = service.deleteEntry(+req.params.id)
     return entry
@@ -45,4 +52,4 @@ const updateEntry = (req: Request, res: Response): Response | void => {
     }
 }
 
-export default { getEntries, addEntry, getEntry, deleteEntry, updateEntry }
+export default { getEntries, addEntry, getEntry, deleteEntry, updateEntry, getOneEntryById }

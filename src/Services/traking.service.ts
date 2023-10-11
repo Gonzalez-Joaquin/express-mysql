@@ -22,6 +22,8 @@ const addEntry = (newEntry: NewEntry): trakingEntry => {
 
 const findById = (id: number): trakingEntry[] | undefined => allData.filter(entry => entry.idIndividual === id)
 
+const findOneById = (id: number): trakingEntry | undefined => allData.find(entry => entry.id === id)
+
 const deleteEntry = (id: number): trakingEntry | undefined => {
     const entry = allData.find(entry => entry.id === id)
     if (entry !== undefined) {
@@ -46,4 +48,4 @@ const updateEntry = (updateEntry: UpdateEntry, id: number): Array<trakingEntry> 
     return allData
 }
 
-export default { getEntries, getEntriesWithoutSensitiveInfo, addEntry, findById, deleteEntry, updateEntry }
+export default { getEntries, getEntriesWithoutSensitiveInfo, addEntry, findById, findOneById, deleteEntry, updateEntry }

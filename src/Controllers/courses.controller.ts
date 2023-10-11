@@ -18,6 +18,13 @@ const addEntry = (req: Request, res: Response): Response => {
     }
 }
 
+const getEntryById = (req: Request, res: Response): Response => {
+    const entry = service.findOneById(+req.params.id)
+    return entry
+        ? res.send(entry)
+        : res.sendStatus(404)
+}
+
 const getEntry = (req: Request, res: Response): Response => {
     const entry = service.findById(+req.params.id)
     return entry
@@ -44,4 +51,4 @@ const updateEntry = (req: Request, res: Response): Response | void => {
     }
 }
 
-export default { getEntries, addEntry, getEntry, deleteEntry, updateEntry }
+export default { getEntries, addEntry, getEntry, getEntryById, deleteEntry, updateEntry }
