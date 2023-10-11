@@ -35,7 +35,7 @@
         "id": 5,
         "idIndividual": 5,
         "title": "Robo de datos confidenciales",
-        "desc": "Hackeo masivo a la plataforma Tecito",
+        "desc": "Hackeo masivo a la plataforma tecito.app",
         "criminalCase": "5",
         "date": "2023-07-16"
     },
@@ -326,5 +326,13 @@
         "desc": "Entradera a un banco donde estaba la hija del ministro de economia, generando chantaje por un millón de dolares, donde estuvo extorcionando a la gente de dentro durante 4 dias, tambien empezó a matar rehenes por cada hora hasta que se le entrego un helicoptero, se encuentra en busqueda y captura",
         "criminalCase": "41",
         "date": "2023-12-10"
+    },
+    {
+        "id": 42,
+        "idIndividual": 12,
+        "title": "Trafico, hurto, venta, desorden publico, estafa, invación a la propiedad privada",
+        "desc": "Trafico de tarjetas de credito clonadas, venta de cuentas hackeadas, robo de monos en la selva brasilera, organización criminal con enanos de circo, vestir a un negro con ropa blanca y hacerlo caminar por las calles en halloween haciendo temor en la población, robar una cabina de camion y hacerla parrilla, hecharle gasoil a un avion de hospitales, vender articulos militares en ebay, todo esto sucedió a los 16 años y termino a los 52 años cuando falleció de una sobredosis, fue profugo durante toda su carrera criminal",
+        "criminalCase": "42",
+        "date": "2024-12-20"
     }
 ]
