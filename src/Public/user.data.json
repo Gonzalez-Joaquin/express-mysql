@@ -1,17 +1,25 @@
 [
     {
         "id": 1,
-        "name": "Joaquin Gonzalez",
-        "credentials": 46103559,
+        "name": "Admin",
+        "credentials": 9999999,
         "permissions": "admin",
-        "email": "joa.contacto.gz@gmail.com",
-        "password": "joaquin123"
+        "email": "admin@root.com",
+        "password": "adminroot"
     },
     {
         "id": 2,
-        "name": "Nahun Carrizo",
-        "credentials": 45919488,
+        "name": "Joaquin Gonzalez",
+        "credentials": 46103559,
         "permissions": "user",
+        "email": "joaquin@gmail.com",
+        "password": "joaquin123"
+    },
+    {
+        "id": 3,
+        "name": "Nahun Carrizo",
+        "credentials": "45103443",
+        "permissions": "admin",
         "email": "nahun@gmail.com",
         "password": "nahun123"
     }

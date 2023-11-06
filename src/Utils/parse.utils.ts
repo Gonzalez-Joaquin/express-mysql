@@ -31,20 +31,4 @@ const trueOrFalse = (trueOrFalseFromRequest: any, value: string): boolean => {
     return trueOrFalseFromRequest
 }
 
-const numberOrArrayOfNumber = (paramsFromRequest: any, value: string): number | number[] => {
-    if (!type.isNumber(paramsFromRequest) || !type.isArray(paramsFromRequest)) {
-        throw new Error('Incorrect or missing' + value)
-    }
-
-    return paramsFromRequest
-}
-
-const numberOrArrayOfNumberOrNull = (paramsFromRequest: any, value: string): number | number[] | null => {
-    if (!type.isNumber(paramsFromRequest) || !type.isArray(paramsFromRequest)) {
-        throw new Error('Incorrect or missing' + value)
-    }
-
-    return paramsFromRequest
-}
-
-export default { string, permissions, trueOrFalse, number, numberOrArrayOfNumber, numberOrArrayOfNumberOrNull }
+export default { string, permissions, trueOrFalse, number } 

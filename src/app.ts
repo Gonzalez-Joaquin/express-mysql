@@ -7,7 +7,6 @@ import indexRouter from './Routes/index.routes'
 import courseRouter from './Routes/course.routes'
 import trakingRouter from './Routes/traking.routes'
 import individualRouter from './Routes/individual.routes'
-import individualTrakingRouter from './Routes/individualTraking.routes'
 
 class App {
     private App: express.Application
@@ -33,7 +32,6 @@ class App {
         this.App.use('/individuals', individualRouter)
         this.App.use('/trakings', trakingRouter)
         this.App.use('/courses', courseRouter)
-        this.App.use('/individuals/trakings', individualTrakingRouter)
     }
 
     async Listen(): Promise<void> {

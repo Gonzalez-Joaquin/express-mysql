@@ -19,10 +19,17 @@ const addEntry = (req: Request, res: Response): Response => {
 }
 
 const getEntry = (req: Request, res: Response): Response => {
-    const entry = service.findById(+req.params.id)
-    return entry
-        ? res.send(entry)
-        : res.sendStatus(404)
+    try {
+
+        const entry = service.findById(+req.params.id)
+        return entry
+            ? res.send(entry)
+            : res.sendStatus(404)
+    }
+    catch (err: any) {
+        return res.status(400).send(err.message)
+    }
+
 }
 
 const getOneEntryById = (req: Request, res: Response): Response => {

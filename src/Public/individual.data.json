@@ -75,7 +75,7 @@
         "id": 10,
         "name": "Joaquin 'La esquina' Lopez",
         "credential": 43556484,
-        "birthDate": "1997-07-17",
+        "birthDate": "1997-07-17",  
         "schoolFinished": false,
         "asJob": false
     },
