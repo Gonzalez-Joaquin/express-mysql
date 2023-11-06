@@ -1,4 +1,4 @@
-import { NewUserEntry, NonSensitiveInfoUser, userEntry, UpdateUserEntry, LoginEntryData, LoginEntry } from '../Interfaces/user.interface'
+import { NewUserEntry, NonSensitiveInfoUser, userEntry, UpdateUserEntry, LoginEntryData, LoginEntry, InfoAdmin } from '../Interfaces/user.interface'
 
 import usersData from '../Public/user.data.json'
 
@@ -6,9 +6,9 @@ const allUsers: Array<userEntry> = usersData as Array<userEntry>
 
 const getEntries = (): Array<userEntry> => allUsers
 
-const getEntriesWithoutSensitiveInfo = (): Array<NonSensitiveInfoUser> => {
-    return allUsers.map(({ id, name, permissions }) => {
-        return { id, name, permissions }
+const getEntriesWithoutSensitiveInfo = (): Array<InfoAdmin> => {
+    return allUsers.map(({ id, name, permissions, credentials, email }) => {
+        return { id, name, permissions, credentials, email }
     })
 }
 

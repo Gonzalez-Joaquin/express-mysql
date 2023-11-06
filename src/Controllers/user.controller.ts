@@ -13,9 +13,7 @@ export const getUsers = (_req: Request, res: Response): Response => {
 export const addUser = (req: Request, res: Response): Response | void => {
     try {
         const newUserEntry = validate.toNewUserEntry(req.body)
-
         const addedUserEntry = userServices.addUser(newUserEntry)
-
         res.json(addedUserEntry)
     }
     catch (Error: any) {
@@ -25,27 +23,36 @@ export const addUser = (req: Request, res: Response): Response | void => {
 
 // Recibo un usuario por id
 export const getUser = (req: Request, res: Response): Response => {
-    const user = userServices.findById(+req.params.id)
-    return user
-        ? res.send(user)
-        : res.sendStatus(404)
+    try {
+        const user = userServices.findById(+req.params.id)
+        return user
+            ? res.send(user)
+            : res.sendStatus(404)
+    }
+    catch (error: any) {
+        return res.status(400).send(error.message)
+    }
+
 }
 
 // Elimino un usuario por id
 export const deleteUser = (req: Request, res: Response): Response => {
-    const user = userServices.deleteUser(+req.params.id)
-    return user
-        ? res.send(`El usuario con id '${JSON.stringify(user.id)}' fue eliminado `)
-        : res.sendStatus(404)
+    try {
+        const user = userServices.deleteUser(+req.params.id)
+        return user
+            ? res.send(`El usuario con id '${JSON.stringify(user.id)}' fue eliminado `)
+            : res.sendStatus(404)
+    }
+    catch (error: any) {
+        return res.status(400).send(error.message)
+    }
 }
 
 // Actualizo un usuario por id
 export const updateUser = (req: Request, res: Response): Response | void => {
     try {
         const updateUserEntry = validate.toUpdatedUserEntry(req.body)
-
         const updatedUserEntry = userServices.updateUser(updateUserEntry, +req.params.id)
-
         res.json(updatedUserEntry)
     }
     catch (Error: any) {
@@ -54,13 +61,10 @@ export const updateUser = (req: Request, res: Response): Response | void => {
 }
 
 // Control de inicio de sesión
-
 export const loginByUsername = (req: Request, res: Response): Response | void => {
     try {
         const loginUserData = validate.updateLoginUserData(req.body)
-
         const updatedUserData = userServices.loginUser(loginUserData)
-
         res.json(updatedUserData)
     }
     catch (Error: any) {

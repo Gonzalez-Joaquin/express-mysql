@@ -13,7 +13,8 @@ export interface userEntry {
 }
 
 export type NonSensitiveInfoUser = Pick<userEntry, 'id' | 'name' | 'permissions'>
+export type InfoAdmin = Omit<userEntry, 'password'>
 export type NewUserEntry = Omit<userEntry, 'id'>
 export type UpdateUserEntry = Omit<userEntry, 'id'>
 export type LoginEntryData = Pick<userEntry, 'email' | 'password'>
-export type LoginEntry = Omit<userEntry, 'password' >
+export type LoginEntry = Omit<userEntry, 'password'>
